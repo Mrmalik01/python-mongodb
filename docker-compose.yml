@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+    test-service:
+        build: ./test-service
+        ports:
+            - "5000:5000"
+        links:
+            - db
+    db:
+        build: ./db
