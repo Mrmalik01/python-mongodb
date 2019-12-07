@@ -18,7 +18,6 @@ class Customer(Resource):
         userNum.update({}, {'$set':{'num_of_users' : prev_num}})
         return {
                 "name" : "Khizar",
-                "address" : "36 capel road",
                 "accounts": 4,
                 "v_id": prev_num
                 }
